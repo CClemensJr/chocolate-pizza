@@ -1,40 +1,160 @@
-body{
-    padding: 0% 12.212% 0%;
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+@import url("https://fonts.googleapis.com/css?family=Dekko");
+* {
+    box-sizing: border-box;
 }
+
+body {
+    padding-left: 12.212%;
+    padding-right: 12.212%;
+}
+
+header, main, footer {
+    background: white;
+}
+
+
+
+header {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+header nav div:first-child {
+    float: left;
+}
+
+#masthead img {
+    float: left;
+    padding-right: 5px;
+}
+
+#masthead div {
+    margin-bottom: 5em;
+}
+#masthead h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.5em;
+}
+
+#masthead h2 {
+    font-family: 'Lekton', sans-serif;
+    font-size: .5em;
+    padding-right: 1em;
+}
+
+header nav div:last-child {
+    float: right;
+    margin-top: 1.5%;
+}
+
+header nav ul:first-of-type {
+    float: left;
+}
+
+header nav ul:last-of-type {
+    float: right;
+    padding-left: 1em;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: -0.1em;
+}
+
+
+/**
+        MAIN CONTENT
+**/
+
+main {
+    padding-top: 5%;
+}
+
+main section:first-of-type {
+    border-top: 15px solid;
+    border-image: repeating-linear-gradient(35deg, white, white 1.5px, black 1.5px, black 2px)8;
+    padding-top: 7%;
+}
+
+main section h3 {
+    display: inline-block;
+}
+main section div:nth-child(2) h4 {
+    float: left;
+    font-family: 'Lekton', sans-serif;
+    font-size: .5em;
+}
+
+#print {
+    float: right;
+    padding:0;
+    margine: 0;
+}
+
+#print img {
+    float: left;
+}
+
+#print p {
+    font-family: 'Lekton', sans-serif;
+    font-size: .5em;
+    float: right;
+}
+
+main figure {
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+#body-text p {
+    line-height: 1.5em;
+    padding-bottom: 3%;
+}
+
+#body-text span {
+    padding-left: 3%;
+}
+
 
 .bg-img{
     background-image: url("../img/list-bg.png" );
-    background-size: 95%;
-    width: 100%;
     background-repeat: no-repeat;
-    padding: 20px 20px 40px;
+    padding: 15px 20px 40px;
     margin: 10px;
     overflow: auto;
     background-size:cover;
+    clear: both;
 
 }
-.list-container{
-    padding: 10px;
+
+.listContainer{
+    padding: 20px;
+    display: flex;
 }
-ul{
-    margin-right: 100px;
-}
+
 li{
     list-style-type: none;
-    padding: 4px;
-    margin-top: 5px;
+    margin-bottom: 8px;
     margin-left: 40px;
-    margin-right: 50px;
-    font-size: 1.5em;
+    font-size: 1.5em;  
 }
 
 .right-list{
-    float:left;
+    padding: 0;
+    margin-left: 10px;
+    padding-bottom: px;
 }
     
 .left-list{
-    float: left;
-    margin-left: 0px;
+    padding: 0;
+    margin-left: 10px;
 }
 label{
     font-family: 'Dekko', cursive;
@@ -43,7 +163,6 @@ label{
 .about-author{
     clear: both;
     float: left;
-    /* background-color: red; */
     width: 100%;
     margin-bottom: 50px;
     margin-top: 30px;
@@ -62,13 +181,11 @@ label{
     margin-top: 0px;
     padding-left: 20px;
     display: block;
-    /* background-color: green; */
 }
 h5{
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 10px;
-    /* background-color: purple; */
 }
 .about-text p{
     margin-top: 0px;
@@ -76,13 +193,8 @@ h5{
 }
 
 .btn{
-    /* vertical-align: 50%;
-    line-height: 100%; */
-    /* border-radius: 0px; */
     margin-right: 30px;
     margin-top: 10px;
-    
-    
 }
 .btn button{
     padding: 15px 20px 15px;
@@ -96,8 +208,6 @@ h5{
 .about-author button{
     float: right;
     position: relative;
-    /* background-color: blue; */
-    
 }
 footer{
     clear: both;
@@ -136,5 +246,3 @@ footer{
 li input[type=checkbox]:checked + label{
     text-decoration: line-through;
   }
-
-
